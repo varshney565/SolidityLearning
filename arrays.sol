@@ -4,7 +4,7 @@ pragma solidity ^0.8.3;
 
 contract local {
     //fixed size array
-    uint [4] public arr = [1,2,3,4];
+    uint [4] public  arr = [1,2,3,4];
 
     //setter
     function setter(uint ind,uint val) public {

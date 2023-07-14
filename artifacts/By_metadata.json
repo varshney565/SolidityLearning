@@ -7,22 +7,9 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "setter",
+				"name": "Hello",
 				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "t",
-				"outputs": [
-					{
-						"internalType": "uint8",
-						"name": "",
-						"type": "uint8"
-					}
-				],
-				"stateMutability": "view",
+				"stateMutability": "pure",
 				"type": "function"
 			}
 		],
@@ -39,7 +26,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"overflow.sol": "local"
+			"BytesAndByte.sol": "By"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -53,12 +40,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"overflow.sol": {
-			"keccak256": "0x937d0fc7ee1223a6a7a55e944ee1781e78defc05b1ea8d9e9e675c34135be278",
+		"BytesAndByte.sol": {
+			"keccak256": "0x1b15409559b8aee3b4ab09f71e1f0daa574b2e34c31acd90dc5ee25609720221",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://8d2c9f2dae15177156d8d0981d2a40cc87839b24fbc9c90d86bd6d90fb373b23",
-				"dweb:/ipfs/QmXrGEBsygtEXN5mZ994owE4Kv7Ge5yTgwcsZbSz4g4fCC"
+				"bzz-raw://66a24880e279532555945dacf4deb58ad0da5a931083dfbca0e0d155acc02f63",
+				"dweb:/ipfs/QmSq1Xw5TsfXArwMXpyM1aB4CT6GbfehYBcn8mxRECiNgy"
 			]
 		}
 	},
