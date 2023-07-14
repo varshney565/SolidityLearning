@@ -8,17 +8,17 @@
 			{
 				"inputs": [
 					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
+						"internalType": "int256",
+						"name": "target",
+						"type": "int256"
 					}
 				],
-				"name": "arr",
+				"name": "BiS",
 				"outputs": [
 					{
-						"internalType": "int256",
+						"internalType": "bool",
 						"name": "",
-						"type": "int256"
+						"type": "bool"
 					}
 				],
 				"stateMutability": "view",
@@ -53,11 +53,11 @@
 	},
 	"sources": {
 		"binarySearch.sol": {
-			"keccak256": "0x60d7ce5c2a6c4e230930b3b678aacdb44c82ce7b3ed250b0178330021f0d6007",
+			"keccak256": "0xc055878632fd5c95e0862cd4df1681da3690c459f5294c50f5e0e97bae520010",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://90c9265adb2e3d2b56b1a40875506910c2514bb60dc9aaa7f633d4fa1f1bcfa2",
-				"dweb:/ipfs/QmYoDuZvSrCsrx4eDt94cd91kSzvHcU2KC7xUfCWyHYa79"
+				"bzz-raw://01b2a3b413a88b759ddd1cd958e6ab3534b5fcf61ca9c49bf26f98d351098e25",
+				"dweb:/ipfs/QmXMXw29YkPEetT4369ec7icRYYPquVLGCHPzF552ZZdLW"
 			]
 		}
 	},
