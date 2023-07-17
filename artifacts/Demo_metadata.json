@@ -8,49 +8,36 @@
 			{
 				"inputs": [
 					{
-						"internalType": "uint256",
-						"name": "_roll",
-						"type": "uint256"
-					},
-					{
-						"internalType": "string",
-						"name": "_name",
-						"type": "string"
+						"internalType": "enum month",
+						"name": "changed_month",
+						"type": "uint8"
 					}
 				],
-				"stateMutability": "nonpayable",
-				"type": "constructor"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "_roll",
-						"type": "uint256"
-					},
-					{
-						"internalType": "string",
-						"name": "_name",
-						"type": "string"
-					}
-				],
-				"name": "change",
+				"name": "changeMonth",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "s1",
+				"name": "currentMonth",
 				"outputs": [
 					{
-						"internalType": "uint256",
-						"name": "roll",
-						"type": "uint256"
-					},
+						"internalType": "enum month",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "sayIt",
+				"outputs": [
 					{
 						"internalType": "string",
-						"name": "name",
+						"name": "",
 						"type": "string"
 					}
 				],
@@ -71,7 +58,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Structure.sol": "Demo"
+			"Enum.sol": "Demo"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -85,12 +72,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Structure.sol": {
-			"keccak256": "0xcc16cb69d24a20cb2c5894f89f0aaf2d4bc5b2185e6779be66c81a639c805b80",
+		"Enum.sol": {
+			"keccak256": "0x5e85f045410aadc751e61af6c1440145caa30fb763fc1fdb72b0900e93a4063f",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://4aed96d6d14d91dee6fa29c07fe6e75f03c579f135ea0e79d47d7f1b9b9740cc",
-				"dweb:/ipfs/QmPAvyb6v4zsUETJghXt4FdT3LvRAzsExPijFRCqoqxfXQ"
+				"bzz-raw://939b24d481e0285993b16c0404914b24cb5311fee8b62e6033b6864449f424b6",
+				"dweb:/ipfs/QmXb6hnUFNL2Q2dRkK1VZUYb6oyAUMqQA8z19f9ipoFjpw"
 			]
 		}
 	},
