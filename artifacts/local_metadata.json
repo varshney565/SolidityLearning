@@ -6,20 +6,32 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"name": "setter",
-				"outputs": [],
-				"stateMutability": "nonpayable",
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "arr",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "t",
+				"name": "go",
 				"outputs": [
 					{
-						"internalType": "uint8",
+						"internalType": "uint256",
 						"name": "",
-						"type": "uint8"
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -39,7 +51,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"overflow.sol": "local"
+			"testing.sol": "local"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -53,12 +65,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"overflow.sol": {
-			"keccak256": "0x937d0fc7ee1223a6a7a55e944ee1781e78defc05b1ea8d9e9e675c34135be278",
+		"testing.sol": {
+			"keccak256": "0x884676786985cfee3c2308f32955db9f6769a74850b0773de6563c9f099974e4",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://8d2c9f2dae15177156d8d0981d2a40cc87839b24fbc9c90d86bd6d90fb373b23",
-				"dweb:/ipfs/QmXrGEBsygtEXN5mZ994owE4Kv7Ge5yTgwcsZbSz4g4fCC"
+				"bzz-raw://901d2b65330def2a93f261353fc477bec8ff9a51363c0e39154c737062a1e6a6",
+				"dweb:/ipfs/QmbZgN8j3DN9yXtgaCL9hS8ocBu36XFVsNSXZidt6zf6jy"
 			]
 		}
 	},
