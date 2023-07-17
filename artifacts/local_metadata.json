@@ -7,64 +7,26 @@
 		"abi": [
 			{
 				"inputs": [],
-				"stateMutability": "nonpayable",
-				"type": "constructor"
-			},
-			{
-				"inputs": [],
-				"name": "a",
+				"name": "getAge",
 				"outputs": [
 					{
-						"internalType": "bytes",
+						"internalType": "uint256",
 						"name": "",
-						"type": "bytes"
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "b",
-				"outputs": [
+				"inputs": [
 					{
-						"internalType": "bytes2",
-						"name": "",
-						"type": "bytes2"
+						"internalType": "uint256",
+						"name": "newage",
+						"type": "uint256"
 					}
 				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "c",
-				"outputs": [
-					{
-						"internalType": "bytes3",
-						"name": "",
-						"type": "bytes3"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "d",
-				"outputs": [
-					{
-						"internalType": "bytes",
-						"name": "",
-						"type": "bytes"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "setter",
+				"name": "setAge",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -83,7 +45,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"byte.sol": "local"
+			"functions.sol": "local"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -97,12 +59,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"byte.sol": {
-			"keccak256": "0xaf05cfe5d1a5ab8d41568a45b01c37e258e69c626a51c42b0fd1c3a1560d010a",
+		"functions.sol": {
+			"keccak256": "0x84b3ae78381eb25763f304cfdf55639d07e456e0b7e357f66405b0d0cb93f6c9",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://cd6cf9612d2e3d1ef843b050a79485b99c842d6a7c160766f31ed952d97e560e",
-				"dweb:/ipfs/QmPTuH2aDEVtaNEdzzmRqCTrDFBSwTFAR6LtdJe91cL5jY"
+				"bzz-raw://4735842ad6b0949c97ebb96557a6a925bb0cf043dc59ea18d27b0a4355562376",
+				"dweb:/ipfs/QmTqSR3XPE7B8QgshCGwBZQFxzVDYp3KTYHsYKzUubBJGa"
 			]
 		}
 	},
