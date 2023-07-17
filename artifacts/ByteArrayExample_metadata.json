@@ -1,0 +1,53 @@
+{
+	"compiler": {
+		"version": "0.8.20+commit.a1b79de6"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "modifyArray",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"byte.sol": "ByteArrayExample"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"byte.sol": {
+			"keccak256": "0x972ce1b40fa09a61980f49de16bb666bc214b930d273dff18109ce2f3a617384",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://47249144d3beff62b16b085c716666a0c73523bfa9fa52da5a5f49661e79b517",
+				"dweb:/ipfs/QmYZsSr1CvADPfu84roajUqS7qtVH2JSFQUwqUFMRGT455"
+			]
+		}
+	},
+	"version": 1
+}
