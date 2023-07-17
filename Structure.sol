@@ -20,7 +20,7 @@ contract Demo{
         Student memory newStudent = Student({
             roll : _roll,
             name : _name
-        }); 
+        });
         s1 = newStudent;
     }
 }
