@@ -7,29 +7,25 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "getBalence",
+				"name": "getter",
 				"outputs": [
 					{
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
 					}
 				],
 				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "payEther",
-				"outputs": [],
-				"stateMutability": "payable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "sendEtherAccount",
-				"outputs": [],
-				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -46,7 +42,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contractForPaymentAndDisplayOfdata.sol": "Demo"
+			"state.sol": "demo"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -60,12 +56,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contractForPaymentAndDisplayOfdata.sol": {
-			"keccak256": "0xaa80e797485c78727030b3d683dbeebe548ef54316a01e0865e0e6bec703555f",
+		"state.sol": {
+			"keccak256": "0x8e255a2c459d5735a55d6c5df6d9b442373e483a07e8a074e04713f16dd5f15b",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://9bad8f772ca348fc2dec1b9447c5fbdbc766fd9c00b5906b41d8382bb0388959",
-				"dweb:/ipfs/QmbYQEvfeqqLyfWWc6dikc7SVJP6mP6cmQHgsFfX7hnvbZ"
+				"bzz-raw://8c99494af19958a9d379e0303121866cfb56e10881681a6904540c6596899f87",
+				"dweb:/ipfs/QmPfhzvLrvTsnNguA3AsQS4XYVNZZrJ5SmdAHfFRPx6RAs"
 			]
 		}
 	},
