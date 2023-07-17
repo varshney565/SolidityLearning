@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.20+commit.a1b79de6"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "Loop",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "arr",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Loops.sol": "Loops"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Loops.sol": {
+			"keccak256": "0x282b55ad42f47ba952d515b9f048a784184bc5e6e040d7b6e57e500a5bbf49f0",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a61dda62f1d475519242065f355ced6fb01cd91efb3965a1f4bd97343e05fa11",
+				"dweb:/ipfs/QmRpJHPTgJAp2zYGLyrLLGvyKSQftikE27jgTt8C2fqwdv"
+			]
+		}
+	},
+	"version": 1
+}

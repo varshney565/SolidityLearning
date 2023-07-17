@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.3+commit.8d00100c"
+		"version": "0.8.20+commit.a1b79de6"
 	},
 	"language": "Solidity",
 	"output": {
@@ -18,9 +18,9 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"binarySearch.sol": "Name"
+			"Loops.sol": "Name"
 		},
-		"evmVersion": "istanbul",
+		"evmVersion": "shanghai",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -32,7 +32,7 @@
 		"remappings": []
 	},
 	"sources": {
-		"binarySearch.sol": {
+		"Loops.sol": {
 			"keccak256": "0xff0b11e8e4dab772da651debe0031a40bd9b2fe7a82c695e84789c08bbd4dac0",
 			"license": "MIT",
 			"urls": [
