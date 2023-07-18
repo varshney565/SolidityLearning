@@ -6,31 +6,27 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"name": "getBalence",
-				"outputs": [
+				"anonymous": false,
+				"inputs": [
 					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "_from",
+						"type": "address"
+					},
+					{
+						"indexed": false,
 						"internalType": "uint256",
-						"name": "",
+						"name": "value",
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "view",
-				"type": "function"
+				"name": "Transfer",
+				"type": "event"
 			},
 			{
-				"inputs": [],
-				"name": "payEther",
-				"outputs": [],
 				"stateMutability": "payable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "sendEtherAccount",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
+				"type": "receive"
 			}
 		],
 		"devdoc": {
@@ -46,7 +42,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"PaymentContract.sol": "Demo"
+			"PaymentSplitter.sol": "payment"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -60,12 +56,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"PaymentContract.sol": {
-			"keccak256": "0xaa80e797485c78727030b3d683dbeebe548ef54316a01e0865e0e6bec703555f",
+		"PaymentSplitter.sol": {
+			"keccak256": "0xc93f35829ffdcb067d8b4ac00ef44b8e75c4a69f48770db81c1ce0e7c375294e",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://9bad8f772ca348fc2dec1b9447c5fbdbc766fd9c00b5906b41d8382bb0388959",
-				"dweb:/ipfs/QmbYQEvfeqqLyfWWc6dikc7SVJP6mP6cmQHgsFfX7hnvbZ"
+				"bzz-raw://3d4ad85db0de9c854a2ef2743903ecbb2b7f3f58a49732f78642371c9103d480",
+				"dweb:/ipfs/QmRt645fUempAqaTVgEacTeoUDechLL6ESc8ZgpcCJXMwG"
 			]
 		}
 	},
