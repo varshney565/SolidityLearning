@@ -6,8 +6,14 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"name": "getAge",
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "arr",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -19,16 +25,16 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
+				"inputs": [],
+				"name": "go",
+				"outputs": [
 					{
 						"internalType": "uint256",
-						"name": "newage",
+						"name": "",
 						"type": "uint256"
 					}
 				],
-				"name": "setAge",
-				"outputs": [],
-				"stateMutability": "nonpayable",
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -45,7 +51,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"functions.sol": "local"
+			"testing.sol": "local"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -59,12 +65,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"functions.sol": {
-			"keccak256": "0x84b3ae78381eb25763f304cfdf55639d07e456e0b7e357f66405b0d0cb93f6c9",
+		"testing.sol": {
+			"keccak256": "0x884676786985cfee3c2308f32955db9f6769a74850b0773de6563c9f099974e4",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://4735842ad6b0949c97ebb96557a6a925bb0cf043dc59ea18d27b0a4355562376",
-				"dweb:/ipfs/QmTqSR3XPE7B8QgshCGwBZQFxzVDYp3KTYHsYKzUubBJGa"
+				"bzz-raw://901d2b65330def2a93f261353fc477bec8ff9a51363c0e39154c737062a1e6a6",
+				"dweb:/ipfs/QmbZgN8j3DN9yXtgaCL9hS8ocBu36XFVsNSXZidt6zf6jy"
 			]
 		}
 	},
