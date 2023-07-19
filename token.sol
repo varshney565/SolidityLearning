@@ -33,6 +33,7 @@ contract MyTOken{
         uint ethers = tokens/500000;
         return ethers;
     }
+    
     // Burn Tokens
     function BurnTokens(uint tokens,address whom) public returns(bool){
         if(owner != msg.sender){
@@ -52,6 +53,7 @@ contract MyTOken{
         user.transfer(ethers);
         return true;
     }
+    
     // function Pay
     function payTokens(address to,uint amount) public returns(bool){
         address sender = msg.sender;

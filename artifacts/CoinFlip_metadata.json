@@ -1,0 +1,66 @@
+{
+	"compiler": {
+		"version": "0.8.20+commit.a1b79de6"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "FlipCoin",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "SeeResult",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"CoinFlip.sol": "CoinFlip"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"CoinFlip.sol": {
+			"keccak256": "0xcc3722046df9aa87851c767f47e3ff3dd1dd1e79876e9b925a64aac0b76e4ca3",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://01b9fe9eb1a3c269e0d9ac09e8730c4b2253e7589033e748c58e044275a2862a",
+				"dweb:/ipfs/QmT2FjmWkUwF7NpGD7pbroPfkTjDn7iGJbaXJGFgdKRaYm"
+			]
+		}
+	},
+	"version": 1
+}
