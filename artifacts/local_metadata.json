@@ -9,6 +9,19 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
+						"name": "x",
+						"type": "uint256"
+					}
+				],
+				"name": "Insert",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
 					}
@@ -26,7 +39,7 @@
 			},
 			{
 				"inputs": [],
-				"name": "go",
+				"name": "getLength",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -35,6 +48,13 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "popELement",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -51,7 +71,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"testing.sol": "local"
+			"arraydynamic.sol": "local"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -65,12 +85,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"testing.sol": {
-			"keccak256": "0x884676786985cfee3c2308f32955db9f6769a74850b0773de6563c9f099974e4",
+		"arraydynamic.sol": {
+			"keccak256": "0xc362c237d1acd7297b9c557ff453c420e2f8161a4e48ff9ed6103eb7c2128ec2",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://901d2b65330def2a93f261353fc477bec8ff9a51363c0e39154c737062a1e6a6",
-				"dweb:/ipfs/QmbZgN8j3DN9yXtgaCL9hS8ocBu36XFVsNSXZidt6zf6jy"
+				"bzz-raw://f71ffbc70ab1c69dc4635e7dda4e91493124c4527297c2e8cb9eab2b574331a2",
+				"dweb:/ipfs/QmcKimsHK6f38ADRwvd9KFPLgqzFZvVcYJ5Npy4KsMUCPR"
 			]
 		}
 	},
