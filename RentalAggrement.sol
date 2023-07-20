@@ -6,7 +6,7 @@ struct Tenant{
     uint JoiningTimestamp;
     uint aadharNumber;
     uint roomNumber;
-    uint leavingTimestamp;
+    uint lastPayTimeStamp;
     string status;
 }
 
@@ -15,7 +15,7 @@ contract Aggrement{
     uint public totalRoomsAvailable = 10;
     address [] Rooms;
     bool [] public RoomsState;
-    address owner;
+    address payable owner;
     uint public depositFee;
     uint public monthlyFee;
     mapping(address=>Tenant) TenantDetails;
@@ -27,15 +27,15 @@ contract Aggrement{
 
     //create a function to assign a room to the Tenant
     constructor(){
-        owner = msg.sender;
+        owner = payable(msg.sender);
         Rooms = new address[](totalRoomsAvailable);
         RoomsState = new bool[](totalRoomsAvailable);
         depositFee = 9000;
         monthlyFee = 9000;
     }
 
-    //registration of user
-    function Registration(string memory name,uint aadhar,uint roomNumber) public returns(bool){
+    //registration of user and this function is also responsible of taking the payments
+    function Registration(string memory name,uint aadhar,uint roomNumber) payable public returns(bool){
 
         //check whether the entered room is within the range of available rooms
         if(roomNumber >= capacity){
@@ -55,12 +55,24 @@ contract Aggrement{
             return false;
         }
 
+        //make sure user has deposited the "deposit fee"
+        uint payment = 0.0000065 ether * 9000;
+        if(msg.value < payment){
+            emit Trigger("insufficient balence to make the registration !");
+            return false;
+        }else if(msg.value > payment){
+            //return the remaining amount to the sender
+            uint ret = msg.value-payment;
+            payable(msg.sender).transfer(ret);
+        }
+
         //creating a new Tenant
         Tenant memory t;
         t.name = name;
         t.aadharNumber = aadhar;
         t.roomNumber = roomNumber;
         t.JoiningTimestamp = block.timestamp;
+        t.lastPayTimeStamp = t.JoiningTimestamp;
         t.status = "JOINED";
         //creating mapping of the Tenant
         TenantDetails[msg.sender] = t;
@@ -69,6 +81,15 @@ contract Aggrement{
         Tenants.push(msg.sender);
         totalRoomsAvailable--;
         return true;
+    }
+
+    //Logic for calculating the money in rs.
+    function Logic(address user) private view returns(uint){
+        uint currentTime = block.timestamp;
+        uint totalTime = currentTime-TenantDetails[user].lastPayTimeStamp;
+        uint totalDays = totalTime/86400;
+        uint toPay = (monthlyFee/30)*totalDays;
+        return toPay;
     }
 
     //leaving the room
@@ -81,6 +102,10 @@ contract Aggrement{
         }
 
         //make the payment of extra days he was in the pg and return the deposit fee to the user accordingly.
+        uint moneyToPay = (depositFee-Logic(msg.sender))*0.0000065 ether;
+        //now take the money from the landlord and pay it to the user
+        address payable user = payable(msg.sender);
+        user.transfer(moneyToPay);
 
         //updating rooms and that person's history.
         totalRoomsAvailable++;
@@ -88,7 +113,7 @@ contract Aggrement{
         Rooms[roomNumber] = address(0);
         RoomsState[roomNumber] = false;
         TenantDetails[msg.sender].status = "LEFT";
-        TenantDetails[msg.sender].leavingTimestamp = block.timestamp;
+        TenantDetails[msg.sender].lastPayTimeStamp = block.timestamp;
 
         //removing that Tenant from the Tenant array
         uint found = Tenants.length;
@@ -149,7 +174,13 @@ contract Aggrement{
     }
 
     //function that landlord will click for receiving the payments
-    function TakeFare() public returns(bool){
+    function TakeFare(address user) public returns(bool){
         //TODO
+        uint day = (block.timestamp-TenantDetails[user].lastPayTimeStamp)/86400;
+        if(day < 30){
+            emit Trigger("Month is not completed Yet !");
+        }
+        uint amount = ((monthlyFee/30)*day)*0.0000065 ether;
+        
     }
 }
