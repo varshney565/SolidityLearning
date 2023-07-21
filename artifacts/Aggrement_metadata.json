@@ -98,13 +98,7 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "user",
-						"type": "address"
-					}
-				],
+				"inputs": [],
 				"name": "TakeFare",
 				"outputs": [
 					{
@@ -113,7 +107,7 @@
 						"type": "bool"
 					}
 				],
-				"stateMutability": "nonpayable",
+				"stateMutability": "payable",
 				"type": "function"
 			},
 			{
@@ -267,11 +261,11 @@
 	},
 	"sources": {
 		"RentalAggrement.sol": {
-			"keccak256": "0xe7fbe7ed696e6551b548f3289f8822642a7fc337a6fede1140487069fc61c970",
+			"keccak256": "0x7aa037c75be0cc8604b2cf1b118223730f44d5caf173c0d2c8afd7ee71846c4b",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://e18293b951909a4479f28fd79dfdd54ccc77c78aeaa2748c389120a2d3607cdb",
-				"dweb:/ipfs/QmUQhtAp8VuEF2YwP7Mxv69et9qaTMaMoM2kUPMro3GQhc"
+				"bzz-raw://879dd1c2fc53fe1d633f585947e2915ed91acd56dccb8f93928d87f809a2305e",
+				"dweb:/ipfs/QmNryP2xvDSGLx1UErXouMVJ7qUbaVb6ekvXowotGQiEKT"
 			]
 		}
 	},

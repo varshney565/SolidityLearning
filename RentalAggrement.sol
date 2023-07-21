@@ -174,13 +174,31 @@ contract Aggrement{
     }
 
     //function that landlord will click for receiving the payments
-    function TakeFare(address user) public returns(bool){
-        //TODO
+    function TakeFare() public payable returns(bool){
+        address payable user = payable(msg.sender);
         uint day = (block.timestamp-TenantDetails[user].lastPayTimeStamp)/86400;
         if(day < 30){
             emit Trigger("Month is not completed Yet !");
+            //give him his payment back
+            if(msg.value > 0)
+                user.transfer(msg.value);
+            return false;
         }
+
+        //user has to pay this amount
         uint amount = ((monthlyFee/30)*day)*0.0000065 ether;
-        
+        if(amount > msg.value){
+            emit Trigger("Insufficient balence");
+            return false;
+        }else if(amount < msg.value){
+            uint ret = msg.value-amount;
+            user.transfer(ret);
+        }
+
+        //transfer this amount to the Landowner
+        owner.transfer(amount);
+        //update the tenant's history that he has paid his payment
+        TenantDetails[user].lastPayTimeStamp = block.timestamp;
+        return true;
     }
 }
