@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.20+commit.a1b79de6"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Lottry.sol": "Lottry"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Lottry.sol": {
+			"keccak256": "0x31fa364782b2fc6907966bae4d79a87eac55dee92b2b04f20457ad08e5252ffd",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f6fefe149e9014ef8cf4f3a3acc93b311651d8a5db25b52443fd708458243d7c",
+				"dweb:/ipfs/QmdUy4DQFhsW4wtYfqvczDgtjcaGbQCJo3qbgp6X9fb92R"
+			]
+		}
+	},
+	"version": 1
+}

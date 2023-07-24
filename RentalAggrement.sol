@@ -185,7 +185,7 @@ contract Aggrement{
             return false;
         }
 
-        //user has to pay this amount
+        //user has to pay this amount   
         uint amount = ((monthlyFee/30)*day)*0.0000065 ether;
         if(amount > msg.value){
             emit Trigger("Insufficient balence");
